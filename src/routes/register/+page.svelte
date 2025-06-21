@@ -60,14 +60,14 @@
 				{/if}
 				
 				<Button type="submit" class="w-full">
-					Create account
+					Register
 				</Button>
 			</form>
 			
 			<div class="mt-6 text-center text-sm">
 				<span class="text-muted-foreground">Already have an account? </span>
 				<a href="/login" class="text-primary hover:underline font-medium">
-					Sign in
+					Login
 				</a>
 			</div>
 		</CardContent>

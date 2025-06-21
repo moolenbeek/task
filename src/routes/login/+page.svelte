@@ -49,14 +49,14 @@
 				{/if}
 				
 				<Button type="submit" class="w-full">
-					Sign in
+					Login
 				</Button>
 			</form>
 			
 			<div class="mt-6 text-center text-sm">
 				<span class="text-muted-foreground">Don't have an account? </span>
 				<a href="/register" class="text-primary hover:underline font-medium">
-					Sign up
+					Register
 				</a>
 			</div>
 		</CardContent>
