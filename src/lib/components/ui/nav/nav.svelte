@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { Button } from '$lib/components/ui/button';
-	import type { User } from '$lib/server/db/schema';
 
 	interface Props {
-		user: User | null;
+		user: { id: string; username: string } | null;
 	}
 
 	let { user }: Props = $props();
@@ -16,6 +15,11 @@
 			<a href="/" class="font-semibold text-lg">
 				Task Scheduler
 			</a>
+			{#if user}
+				<a href="/tasks" class="text-sm text-muted-foreground hover:text-foreground">
+					Tasks
+				</a>
+			{/if}
 		</div>
 		
 		{#if user}

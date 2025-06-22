@@ -11,11 +11,17 @@
 			<p class="text-lg text-muted-foreground mb-8">
 				Hello, {data.user.username}! You're successfully logged in.
 			</p>
-			<div class="bg-card border rounded-lg p-6">
+			<div class="bg-card border rounded-lg p-6 mb-6">
 				<h2 class="text-xl font-semibold mb-4">Getting Started</h2>
-				<p class="text-muted-foreground">
+				<p class="text-muted-foreground mb-4">
 					This is your dashboard. You can start creating and managing your tasks here.
 				</p>
+				<a 
+					href="/tasks" 
+					class="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90"
+				>
+					View My Tasks
+				</a>
 			</div>
 		</div>
 	{:else}
