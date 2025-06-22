@@ -44,11 +44,12 @@ export const actions: Actions = {
 				estimatedMinutes,
 				priority
 			});
-
-			throw redirect(302, '/tasks');
 		} catch (error) {
 			console.error('Error creating task:', error);
 			return fail(500, { error: 'Failed to create task. Please try again.' });
 		}
+
+		// Redirect after successful creation
+		throw redirect(302, '/tasks');
 	}
 }; 
